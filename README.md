@@ -5,6 +5,7 @@
 - This is a boilerplate is configured with Mongo, PM2, eslint etc.
 - One api has been created for convenience which can perform CRUD operations.
 - Also this boilerplate is configured to use es6.
+- This project is also enabled with linting and prettier.
 
 # Instructions
 
