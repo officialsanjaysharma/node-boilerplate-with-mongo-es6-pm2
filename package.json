@@ -1,0 +1,71 @@
+{
+  "name": "node-express-mongoose-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Sanjay Sharma <officialsanjaysharma@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "pm2 start npm -- start",
+    "build": "webpack",
+    "dev": "webpack-dev-server --output-public-path=/build/",
+    "start": "nodemon --exec babel-node ./bin/www",
+    "lint": "eslint .",
+    "dev1": "cross-env NODE_ENV=development nodemon --exec babel-node ./bin/www",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "boilerplate",
+    "generator",
+    "express",
+    "rest",
+    "api",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "jest",
+    "travis",
+    "docker",
+    "eslint",
+    "prettier"
+  ],
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cross-env": "^7.0.2",
+    "debug": "~2.6.9",
+    "dotenv": "^8.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^5.9.27",
+    "morgan": "~1.9.1",
+    "pm2": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "4.0.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "regenerator-runtime": "^0.13.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^2.5.0"
+  }
+}

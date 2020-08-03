@@ -1,0 +1,17 @@
+language: node.js
+node_js:
+  - '12.16.1'
+services:
+  - mongodb
+cache: yarn
+env:
+  global:
+    - MONGO_PATH=localhost
+    - MONGODB_DATABASE=Users
+    - MONGO_USER=root
+    - MONGO_PASSWORD=password
+
+script:
+  - yarn lint
+  - yarn test
+after_success: yarn coverage:coveralls
