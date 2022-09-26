@@ -45,7 +45,7 @@
     "jade": "~1.11.0",
     "mongoose": "^5.9.27",
     "morgan": "~1.9.1",
-    "pm2": "^4.4.0"
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
